@@ -1,0 +1,20 @@
+.display-container {
+    padding: 20px;
+    width: 20rem;
+    height: fit-content;
+    margin-top: 7rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+    h1{
+        border-bottom: 1px solid #c9c9c9;
+        font-weight: 600;
+    }
+}    
+.plain-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.form-container {
+  padding: 20px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+.btn-add{
+  background-color: #a899e7;
+  color: #191333;
+  height: 40px;
+  border-radius: 5px;
+  width: 14rem;
+  border: none;
+  padding: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  height: 600px;
+}

@@ -1,5 +1,9 @@
 .section-conteiner{
     height: 100vh;
-    background-color: #6F58C9;
-
+    background-color: #eef6fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem
+    ;
 }

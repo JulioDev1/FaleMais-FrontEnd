@@ -1,1 +1,12 @@
-<p>form works!</p>
+<div>
+
+  <section class="main-container">
+    <form [formGroup]="form" class="form-container">
+        <app-inputs label="Ddd de Origem" formControlName="origem"/>   
+        <app-inputs label="Ddd de Destino" formControlName="destino"/>
+        <app-inputs label="Planos" formControlName="plano"/>
+        <app-inputs label="Minutos" formControlName="minutos"/>
+      <button (click)="buttonClick()" class="btn-add">Montar Orçamento</button>
+    </form>
+  </section>
+</div>

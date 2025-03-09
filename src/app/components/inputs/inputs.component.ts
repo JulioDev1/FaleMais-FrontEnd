@@ -8,14 +8,15 @@ import { FormsModule, NgControl } from '@angular/forms';
     <div class="input-group">
         <label >{{ label() }}</label>
         <input 
-            type="text" 
-            [(ngModel)]="inputValue" 
-            (focus)="onTouched && onTouched()"
-            (input)="onChange && onChange(inputValue)"
+          type="text" 
+          [(ngModel)]="inputValue" 
+          (focus)="onTouched && onTouched()"
+          (input)="onChange && onChange(inputValue)"
         />
     </div>
   `,
-  styleUrl: './inputs.component.css'
+  styleUrl: './inputs.component.css',
+
 })
 export class InputsComponent {
   label = input.required();
@@ -30,7 +31,6 @@ export class InputsComponent {
   }
 
   writeValue(obj: string): void {
-   console.log(obj);
     this.inputValue = obj;
   }
   registerOnChange(fn: any): void {

@@ -13,3 +13,7 @@ para rodar a aplicação, primeiro garanta que back end fale Mais Back end estej
     npm run start
 ```
 e a aplicação já vai estar pronta par ao uso
+Abaixo um pequeno Preview da tela
+
+![image](https://github.com/user-attachments/assets/f9a282ce-4d21-4da5-b8d7-828c7a567451)
+

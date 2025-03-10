@@ -12,7 +12,22 @@
         border-bottom: 1px solid #c9c9c9;
         font-weight: 600;
     }
-}    
+    span{
+        display: flex;
+        justify-content: space-between;
+    }
+    strong{
+        font-weight: 600;
+    }
+}
+@media (max-width: 768px) {
+    .display-container{
+        margin-top: 0;
+    }
+}
+.money{
+    color: rgb(1, 116, 1);
+}
 .plain-conteiner{
     display: flex;
     flex-direction: column;

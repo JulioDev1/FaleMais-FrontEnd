@@ -12,7 +12,7 @@ import { FormsModule, NgControl } from '@angular/forms';
 
 export class SelectComponent {
   @Input() label: string = '';
-  @Input() options: { label: string; value: number }[] = [];
+  @Input() options: { label: string; value: any }[] = [];
 
   selectedValue: string = '';
 

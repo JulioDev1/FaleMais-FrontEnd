@@ -1,9 +1,10 @@
 <section class="display-container">
     <div>
-        <h1>Comparações</h1>
+        <h1>Orçamento</h1>
     </div>
     <div class="plain-conteiner">
-        <span>Plano ValeMais</span>
-        <span>Sem Plano</span>
+        <span>Plano <strong>{{budgetData?.plano}}</strong></span>
+        <span>Sem Plano  <strong class="money">R${{ budgetData?.budgetBasic}}</strong></span>
+        <span>Com o Plano Mais  <strong class="money">R${{ budgetData?.budgetFale}}</strong></span>
     </div>
 </section>

@@ -1,11 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ResponseBudgetDto } from '../../services/Model/ResponseDto';
+import { CommonModule } from '@angular/common';
+import { BudgetService } from '../../services/budget.service';
 
 @Component({
   selector: 'app-display',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './display.component.html',
   styleUrl: './display.component.css'
 })
-export class DisplayComponent {
+export class DisplayComponent implements OnInit {
+
+  budgetData: ResponseBudgetDto | null = null;
+
+  constructor(private budgetService: BudgetService) {}
+
+  ngOnInit(): void {
+    this.budgetService.budgetData$.subscribe(data => {
+      this.budgetData = data;
+    });
+  }
+
+
 
 }

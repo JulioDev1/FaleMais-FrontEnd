@@ -2,12 +2,11 @@
 
   <section class="main-container">
     <form [formGroup]="form" class="form-container">
-        <app-inputs label="Ddd de Origem" formControlName="origem"/>   
-          
-        <app-select label="Planos" formControlName="plano" [options]="planos"  />
-        <app-inputs label="Ddd de Destino" formControlName="destino"/>
-        <app-inputs label="Minutos" formControlName="minutos"/>
-      <button (click)="buttonClick()" class="btn-add">Montar Orçamento</button>
+      <app-select label="Planos" formControlName="plano" [options]="planos"  />
+      <app-select label="Ddd de Origem" formControlName="origemDdd" [options]="origem"  />
+      <app-select label="Ddd de Destino" formControlName="destinoDdd" [options]="destino"/>
+      <app-inputs label="Minutos" formControlName="minutos"/>
+      <button (click)="buttonClick()" class="btn-add">Fazer Orçamento</button>
     </form>
   </section>
 </div>

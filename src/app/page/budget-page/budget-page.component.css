@@ -7,3 +7,13 @@
     gap: 5rem
     ;
 }
+@media (max-width: 768px) {
+    .section-conteiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 10px;
+
+    }    
+}
